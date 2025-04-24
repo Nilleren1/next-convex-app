@@ -3,7 +3,6 @@ import React from 'react'
 import Image from "next/image";
 import containerImage from "../../../public/pc-image.webp";
 import {useTranslations} from 'next-intl';
-// import {Link} from '@/i18n/navigation';
 
 export default function Home() {
   const t = useTranslations('HomePage');

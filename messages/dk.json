@@ -1,6 +1,12 @@
 {
-    "HomePage": {
+  "HomePage": {
       "title": "Hej verden!",
-      "about": "Gå til næste side"
-    }
+      "home": "HJEM",
+      "projects": "PROJEKTER",
+      "account": {
+          "label": "KONTO",
+          "login": "Log ind",
+          "createUser": "Opret bruger"
+      }
+  }
 }

@@ -1,6 +1,13 @@
 {
-    "HomePage": {
+  "HomePage": {
       "title": "Hello world!",
-      "about": "Go to the about page"
-    }
+      "home": "HOME",
+      "projects": "PROJECTS",
+      "account": {
+          "label": "ACCOUNT",
+          "login": "Login",
+          "createUser": "Create User"
+          
+      }
+  }
 }
