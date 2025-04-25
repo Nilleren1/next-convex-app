@@ -49,9 +49,15 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider>
-            <Navbar />
             <ConvexClientProvider>
-              {children}
+              <div className="grid grid-cols-6 gap-4 p-8 sm:mx-15 mx-5">
+                <div className="col-span-6">
+                  <Navbar />
+                </div>
+                <div className="col-span-6">
+                  {children}
+                </div>
+              </div>
             </ConvexClientProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
