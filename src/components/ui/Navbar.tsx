@@ -8,10 +8,10 @@ import {
   MenubarMenu,
   MenubarSeparator,
   MenubarTrigger,
-} from "@/app/components/menubar"
+} from "@/components/ui/menubar"
 import { ModeToggle } from './ModeToggle'
-import {Link} from '@/i18n/navigation';
-import {useTranslations} from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const t = useTranslations('HomePage');
