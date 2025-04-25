@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import Image from "next/image";
-import containerImage from "../../../public/pc-image.webp";
+import containerImage from "@public/pc-image.webp";
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="grid grid-cols-6 sm:grid-rows-[2fr_1fr] gap-4 sm:h-[90vh] h-auto ">
+      <div className="grid grid-cols-6 sm:grid-rows-[2fr_1fr] gap-5 sm:h-[80vh] h-auto ">
         {/* Row 1: Two large containers */}
         <div className="page-container sm:col-span-3 col-span-6 p-8">{t('title')}</div>
         <div className="page-container sm:col-span-3 col-span-6"><Image src={containerImage} priority sizes="(max-width: 640px) 80vw, 600vw" className="container-image" alt=''></Image></div>
@@ -20,6 +20,5 @@ export default function Home() {
         <div className="page-container sm:col-span-2 col-span-6 p-8">Small Container 3</div>
       </div>
     </>
-
   );
 }
