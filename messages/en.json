@@ -1,13 +1,16 @@
 {
   "HomePage": {
-      "title": "Hello world!",
+      "title": "Hello there!",
       "home": "HOME",
       "projects": "PROJECTS",
       "account": {
           "label": "ACCOUNT",
           "login": "Login",
           "createUser": "Create User"
-          
-      }
+      },
+      "message1": "🎉 Welcome to my webpage! 🎉 ",
+      "message2": "I'm a web developer passionate about building innovative and user-friendly digital experiences. ",
+      "message3": "Take a look at my portfolio and let's connect!",
+      "linkedin": "https://www.linkedin.com/in/nicolai-h%C3%B8gsbjerg/"
   }
 }
