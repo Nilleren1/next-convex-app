@@ -53,7 +53,7 @@ export default function Home() {
           }}
         >
           <CarouselContent>
-          <CarouselItem className="relative h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-md">
+            <CarouselItem className="relative h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-md">
               <Image
                 src="/pc-image.webp"
                 alt="PC Image"
