@@ -8,10 +8,11 @@ import {
   MenubarMenu,
   MenubarSeparator,
   MenubarTrigger,
-} from "@/components/ui/menubar"
+} from "@/components/ui/Menubar"
 import { ModeToggle } from './ModeToggle'
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import { WhiteIcon } from './WhiteIcon';
 
 export default function Navbar() {
   const t = useTranslations('HomePage');
@@ -19,12 +20,15 @@ export default function Navbar() {
     <div>
       <Menubar className='p-7'>
         <MenubarMenu>
+          <WhiteIcon width={50}/>
           <MenubarTrigger><Link href="/">{t('home')}</Link></MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger>BLOG</MenubarTrigger>
           <MenubarContent>
-
+            <MenubarItem inset><Link href="/blog">Posts</Link></MenubarItem>
+            <MenubarSeparator />
+            <MenubarItem inset><Link href="/blog/createPost">Create Post</Link></MenubarItem>
           </MenubarContent>
         </MenubarMenu>
         <MenubarMenu>
