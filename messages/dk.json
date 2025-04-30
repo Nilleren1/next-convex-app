@@ -1,12 +1,16 @@
 {
   "HomePage": {
-      "title": "Hej verden!",
-      "home": "HJEM",
-      "projects": "PROJEKTER",
-      "account": {
-          "label": "KONTO",
-          "login": "Log ind",
-          "createUser": "Opret bruger"
-      }
+    "title": "Halløj!",
+    "home": "HJEM",
+    "projects": "PROJEKTER",
+    "account": {
+      "label": "KONTO",
+      "login": "Log ind",
+      "createUser": "Opret bruger"
+    },
+    "message1": "🎉 Velkommen til min hjemmeside! 🎉",
+    "message2": "Jeg er en webudvikler, der brænder for at skabe innovative og brugervenlige digitale oplevelser.",
+    "message3": "Tag et kig på min portfolio, og lad os forbinde!",
+    "linkedin": "https://www.linkedin.com/in/nicolai-hogsbjerg/"
   }
 }
