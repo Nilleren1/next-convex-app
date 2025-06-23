@@ -11,7 +11,7 @@ export const createPost = mutation({
     },
     handler: async (ctx, args) => {
         await ctx.db.insert("posts", {
-            slug: args.slug,
+            slug: args.slug,    
             image: args.image,
             header: args.header,
             text: args.text,
