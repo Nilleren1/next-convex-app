@@ -2,7 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/Carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -85,9 +90,15 @@ export default function Home() {
         </Carousel>
 
         {/* Row 2: Three smaller containers */}
-        <div className="page-container sm:col-span-2 p-8">Small Container 1</div>
-        <div className="page-container sm:col-span-2 p-8">Small Container 2</div>
-        <div className="page-container sm:col-span-2 p-8">Small Container 3</div>
+        <div className="page-container sm:col-span-2 p-8">
+          Small Container 1
+        </div>
+        <div className="page-container sm:col-span-2 p-8">
+          Small Container 2
+        </div>
+        <div className="page-container sm:col-span-2 p-8">
+          Small Container 3
+        </div>
       </div>
     </>
   );

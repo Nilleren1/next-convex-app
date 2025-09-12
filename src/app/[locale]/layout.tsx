@@ -4,9 +4,9 @@ import { ConvexClientProvider } from "../providers/ConvexClientProvider";
 import "../globals.css";
 import Navbar from "../../components/ui/Navbar";
 import { ThemeProvider } from "next-themes";
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -54,9 +54,7 @@ export default async function LocaleLayout({
                 <div className="col-span-6">
                   <Navbar />
                 </div>
-                <div className="col-span-6">
-                  {children}
-                </div>
+                <div className="col-span-6">{children}</div>
               </div>
             </ConvexClientProvider>
           </NextIntlClientProvider>

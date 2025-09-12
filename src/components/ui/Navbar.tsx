@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 import { Menu as BurgerIcon } from "lucide-react";
 import {
   Menubar,
@@ -9,14 +9,14 @@ import {
   MenubarMenu,
   MenubarSeparator,
   MenubarTrigger,
-} from "@/components/ui/Menubar"
-import { ModeToggle } from './ModeToggle'
-import { Link } from '@/i18n/navigation';
-import { useTranslations } from 'next-intl';
-import { WhiteIcon } from './WhiteIcon';
+} from "@/components/ui/Menubar";
+import { ModeToggle } from "./ModeToggle";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import { WhiteIcon } from "./WhiteIcon";
 
 export default function Navbar() {
-  const t = useTranslations('HomePage');
+  const t = useTranslations("HomePage");
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -25,7 +25,7 @@ export default function Navbar() {
         <WhiteIcon width={50} />
         <MenubarMenu>
           <MenubarTrigger>
-            <Link href="/">{t('home')}</Link>
+            <Link href="/">{t("home")}</Link>
           </MenubarTrigger>
         </MenubarMenu>
       </div>
@@ -34,13 +34,19 @@ export default function Navbar() {
         <MenubarMenu>
           <MenubarTrigger>BLOG</MenubarTrigger>
           <MenubarContent>
-            <MenubarItem inset><Link href="/blog">Posts</Link></MenubarItem>
+            <MenubarItem inset>
+              <Link href="/blog">Posts</Link>
+            </MenubarItem>
             <MenubarSeparator />
-            <MenubarItem inset><Link href="/blog/createPost">Create Post</Link></MenubarItem>
+            <MenubarItem inset>
+              <Link href="/blog/createPost">Create Post</Link>
+            </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger><Link href="/projects">{t('projects')}</Link></MenubarTrigger>
+          <MenubarTrigger>
+            <Link href="/projects">{t("projects")}</Link>
+          </MenubarTrigger>
           <MenubarContent></MenubarContent>
         </MenubarMenu>
       </div>
@@ -48,11 +54,15 @@ export default function Navbar() {
         <div className="hidden md:flex">
           {/* ...account menu and ModeToggle for desktop... */}
           <MenubarMenu>
-            <MenubarTrigger>{t('account.label')}</MenubarTrigger>
+            <MenubarTrigger>{t("account.label")}</MenubarTrigger>
             <MenubarContent>
-              <MenubarItem inset><Link href="/login">{t('account.login')}</Link></MenubarItem>
+              <MenubarItem inset>
+                <Link href="/login">{t("account.login")}</Link>
+              </MenubarItem>
               <MenubarSeparator />
-              <MenubarItem inset><Link href="/createUser">{t('account.createUser')}</Link></MenubarItem>
+              <MenubarItem inset>
+                <Link href="/createUser">{t("account.createUser")}</Link>
+              </MenubarItem>
             </MenubarContent>
           </MenubarMenu>
           <ModeToggle />
@@ -70,9 +80,9 @@ export default function Navbar() {
         <div className="flex flex-col md:hidden bg-white dark:bg-card p-4 shadow-lg w-full gap-3 border rounded-md items-center absolute top-full left-0 z-50">
           <Link href="/blog">Posts</Link>
           <Link href="/blog/createPost">Create Post</Link>
-          <Link href="/projects">{t('projects')}</Link>
-          <Link href="/login">{t('account.login')}</Link>
-          <Link href="/createUser">{t('account.createUser')}</Link>
+          <Link href="/projects">{t("projects")}</Link>
+          <Link href="/login">{t("account.login")}</Link>
+          <Link href="/createUser">{t("account.createUser")}</Link>
           <ModeToggle />
         </div>
       )}
